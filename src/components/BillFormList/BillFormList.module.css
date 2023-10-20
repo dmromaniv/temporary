@@ -1,0 +1,20 @@
+.list {
+  list-style: none;
+
+  margin-bottom: 100px;
+}
+
+.listItem {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.deleteBtn {
+  position: "absolute";
+  top: "0";
+  right: "0";
+}
+
+.addBtn {
+  margin-bottom: 100px;
+}
