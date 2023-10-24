@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Button } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import AddIcon from "@mui/icons-material/Add";
 
@@ -50,14 +50,14 @@ const BillFormList: React.FC = () => {
                   payee={availablePayee}
                 />
                 {index !== 0 && index === items.length - 1 ? (
-                  <Button
-                    style={{ position: "absolute", top: "0", right: "0" }}
+                  <IconButton
+                    style={{ position: "absolute", top: "0", right: "0", color: "gray" }}
                     onClick={() => {
                       handleDelButtonClick();
                     }}
                   >
                     <CancelOutlinedIcon />
-                  </Button>
+                  </IconButton>
                 ) : (
                   ""
                 )}
