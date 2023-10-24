@@ -91,9 +91,12 @@ const BillForm = (props: BillFormProps) => {
             helperText={formik.touched.sender && formik.errors.sender}
           >
             {accounts.map((option) => (
-              <MenuItem className={styles.accountsInfo} key={option.id} value={option.name}>
-                <ListItemText primary={option.name} />
-                <ListItemText primary={option.sum} />
+              <MenuItem key={option.id} value={option.name}>
+                <ListItemText
+                  sx={{ display: "inline-block", paddingRight: "50px" }}
+                  primary={option.name}
+                />
+                <ListItemText sx={{ display: "inline-block" }} primary={option.sum} />
               </MenuItem>
             ))}
           </TextField>
